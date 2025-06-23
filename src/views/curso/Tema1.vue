@@ -17,7 +17,7 @@
 
     p.mb-4 El desarrollo de habilidades socioemocionales constituye un eje esencial para la formación integral de los niños, ya que les permite construir relaciones significativas, manejar sus emociones y desenvolverse en entornos sociales diversos.
 
-    .bg-full-width.bg-color-6.mb-lg-5
+    .bg-full-width.bg-color-6.mb-5
       .px-4.p-md-5
         .row.justify-content-center.align-items-center
           .col-lg-7.mb-3.mb-lg-0

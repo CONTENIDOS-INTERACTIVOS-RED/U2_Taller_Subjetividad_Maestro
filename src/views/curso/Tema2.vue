@@ -66,7 +66,7 @@
     
     .row
       .col-lg-auto.mb-3.mb-lg-0
-        figure
+        figure.d-flex.justify-content-center
           img(src="@/assets/curso/tema2/7.png", data-aos="zoom-in", style="max-width: 210px")
       .col-lg
         .bg-color-1.p-5.mb-5(data-aos="fade-left")

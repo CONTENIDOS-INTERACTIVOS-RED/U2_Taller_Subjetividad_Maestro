@@ -191,7 +191,7 @@
     
     p.mb-4 Los discursos religiosos e institucionales han influido profundamente en la manera como se ha concebido históricamente la infancia y su educación, muchas veces legitimando el castigo como forma de corrección y amor.
 
-    .bg-full-width.bg-color-6.mb-lg-5
+    .bg-full-width.bg-color-6.mb-5
       .px-4.p-md-5
         .row.justify-content-center.align-items-center
           .col-lg-7.mb-3.mb-lg-0
