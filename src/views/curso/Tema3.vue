@@ -188,6 +188,10 @@
             iframe(width="560" height="315" src="https://www.youtube.com/embed/9cqLwqWDCzs?si=F1b2M6SlLRnGqFf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
 
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
@@ -226,10 +230,195 @@
               img(src='@/assets/componentes/material-complementario.svg', alt='')
 
 </template>
-
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
   name: 'Tema3',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál de las siguientes afirmaciones refleja mejor la función del vínculo afectivo en la infancia?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Permite que los niños adquieran conocimientos matemáticos con mayor rapidez.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Facilita el desarrollo físico, dejando de lado lo emocional.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Contribuye al desarrollo socioemocional y la construcción de la identidad.',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Se limita a la relación exclusiva con los padres.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué habilidad emocional se fortalece cuando los niños interactúan empáticamente con sus pares?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'El pensamiento abstracto.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'La empatía y la regulación emocional.  ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'La memorización mecánica',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'La capacidad para seguir normas sin cuestionarlas.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              'Según el enfoque cultural de las emociones, ¿qué aspecto es determinante en la forma en que los niños expresan sus sentimientos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'El nivel económico de la familia.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'El uso de tecnología en el hogar.',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'La cantidad de juguetes disponibles en casa.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Las normas culturales del contexto en el que crecen.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Por qué el juego es considerado una estrategia clave en el desarrollo emocional infantil?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Porque permite que los niños compitan entre sí y se esfuercen más.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Porque ayuda a mejorar su rendimiento académico exclusivamente.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Porque en el juego los niños experimentan y comparten emociones reales.',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Porque reduce el tiempo que pasan con adultos.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Cuál es una estrategia eficaz que puede implementar un docente para promover la reciprocidad emocional en el aula?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Aplicar castigos cuando los niños expresan emociones negativas.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Fomentar la reflexión emocional después de actividades grupales.',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Permitir que los niños trabajen siempre de manera individual.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Ignorar los conflictos emocionales para evitar interrupciones.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -238,4 +427,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
