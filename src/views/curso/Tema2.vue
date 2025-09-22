@@ -51,7 +51,7 @@
             h2.mb-4(data-aos="flip-up") Emociones universales y culturales en los niños
             p.mb-4(data-aos="fade-right") En el PDF <b>Emociones universales y culturales en los niños</b>, se analiza cómo ciertas emociones básicas son compartidas por todos los seres humanos, mientras que su manifestación varía según las normas sociales, familiares y comunitarias. Este enfoque permite a los futuros docentes reflexionar sobre la importancia de acompañar emocionalmente a los niños desde una mirada empática, crítica y culturalmente consciente, reconociendo la diversidad emocional como parte fundamental de una educación inclusiva.
     
-            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
+            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")(data-aos="flip-up")
               .anexo__icono(:style="{'background-color': '#FCDFDB'}")
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
@@ -263,7 +263,7 @@
               figure
                 img(src="@/assets/curso/tema2/26.png")
             .col-lg-7
-              p Sentir miedo puede ser una señal de protección ; el enojo, una respuesta ante la injusticia; la tristeza, una reacción natural ante una pérdida. Enseñar a los niños a identificar estos matices es ofrecerles herramientas para entenderse desde la compasión y no desde la culpa.
+              p Sentir miedo puede ser una señal de protección; el enojo, una respuesta ante la injusticia; la tristeza, una reacción natural ante una pérdida. Enseñar a los niños a identificar estos matices es ofrecerles herramientas para entenderse desde la compasión y no desde la culpa.
     
     p.mb-4 Cuando se enseña que las emociones pueden gestionarse, se educa en la esperanza, la resiliencia y la transformación. Una frustración intensa, al ser comprendida, compartida y gestionada, puede convertirse en aprendizaje. Así, las emociones dejan de ser obstáculos y se convierten en aliadas del crecimiento.
 
